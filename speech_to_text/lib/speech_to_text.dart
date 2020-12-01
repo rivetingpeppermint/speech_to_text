@@ -327,7 +327,7 @@ class SpeechToText {
     _partialResults = partialResults;
     try {
       bool started = await SpeechToTextPlatform.instance.listen(
-          partialResults: partialResults || null != pauseFor,
+          partialResults: partialResults,
           onDevice: onDevice,
           listenMode: listenMode.index,
           sampleRate: sampleRate,
